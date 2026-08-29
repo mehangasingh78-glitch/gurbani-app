@@ -1,0 +1,31 @@
+{
+    "version": "1.0.5",
+    "updated": "2026-08-01",
+    "title": "REFLECTIONS OF SRI GURU GRANTH SAHIB",
+    "logo": "icon.png",
+    "banner_image": "banner_image.jpg",
+    "theme": {
+        "primary": "#357BB1",
+        "secondary": "#FFB300",
+        "background": "#F5F5F7",
+        "surface": "#FFFFFF"
+    },
+    "pages": [
+        {
+            "title": "About",
+            "file": "about.html"
+        },
+        {
+            "title": "Contact Us",
+            "file": "contact_us.html"
+        },
+        {
+            "title": "Privacy Policy",
+            "file": "privacy_policy.html"
+        },
+        {
+            "title": "Term And Conditions",
+            "file": "term_and_conditions.html"
+        }
+    ]
+}
