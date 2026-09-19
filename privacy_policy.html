@@ -3,66 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Reflections of Sri Guru Granth Sahib</title>
+    <title>Privacy Policy - Reflections Of Gurbani</title>
     <style>
         :root {
-            --primary: #5E35B1;
-            --text: #2D3748;
+            --primary: #357BB1;
+            --primary-dark: #2A628F;
+            --accent: #FFB300;
+            --text-main: #1E293B;
+            --text-muted: #475569;
             --bg: #F8FAFC;
-            --card: #FFFFFF;
+            --card-bg: #FFFFFF;
+            --border: #E2E8F0;
+            --info-bg: #EFF6FF;
+            --info-border: #BFDBFE;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
             background-color: var(--bg);
-            color: var(--text);
+            color: var(--text-main);
             margin: 0;
             padding: 24px 16px;
-            line-height: 1.6;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
         }
+
         .container {
-            max-width: 720px;
+            max-width: 800px;
             margin: 0 auto;
-            background: var(--card);
-            padding: 28px;
+            background: var(--card-bg);
+            padding: 36px 32px;
             border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border);
         }
+
+        .header-badge {
+            display: inline-block;
+            background: rgba(53, 123, 177, 0.1);
+            color: var(--primary);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         h1 {
             color: var(--primary);
-            font-size: 24px;
-            margin-top: 0;
-            border-bottom: 2px solid #EDF2F7;
-            padding-bottom: 12px;
+            font-size: 28px;
+            margin: 0 0 8px 0;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
-        h2 {
-            font-size: 18px;
-            color: var(--primary);
-            margin-top: 20px;
-        }
-        p {
+
+        .meta-date {
             font-size: 14px;
-            color: #4A5568;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        /* App & Developer Info Box */
+        .info-card {
+            background-color: var(--info-bg);
+            border: 1px solid var(--info-border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 28px;
+        }
+
+        .info-card-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-top: 0;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        .info-item {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: var(--text-muted);
+            display: inline-block;
+            min-width: 140px;
+        }
+
+        .info-value {
+            color: var(--text-main);
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        h2 {
+            font-size: 19px;
+            color: var(--primary-dark);
+            margin-top: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin: 0 0 14px 0;
+        }
+
+        ul {
+            margin: 0 0 16px 0;
+            padding-left: 24px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 16px;
+        }
+
+        .contact-item {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .info-label {
+                min-width: 110px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="header-badge">Google Play Store Compliance</div>
         <h1>Privacy Policy</h1>
-        <p>Last updated: July 2026</p>
+        <div class="meta-date">Last Updated: September 19, 2026</div>
 
-        <p>Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect while operating our mobile application.</p>
+        <!-- App & Developer Identification Section -->
+        <div class="info-card">
+            <div class="info-card-title">
+                Application & Developer Identification
+            </div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">Application Name:</span>
+                    <span class="info-value">Reflections Of Gurbani</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Full Title:</span>
+                    <span class="info-value">Reflections of Sri Guru Granth Sahib</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Package ID:</span>
+                    <span class="info-value">com.leoford.reflections_of_gurbani</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Developer / Entity:</span>
+                    <span class="info-value">Mehanga Singh (LeoFord)</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Developer Email:</span>
+                    <span class="info-value"><a href="mailto:support@gurbaniapp.com">support@gurbaniapp.com</a></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Policy URL:</span>
+                    <span class="info-value">https://mehangasingh78-glitch.github.io/gurbani-app/privacy_policy.html</span>
+                </div>
+            </div>
+        </div>
+
+        <p>This Privacy Policy governs the manner in which <strong>Mehanga Singh</strong> ("Developer", "we", "us", or "our") handles user information and privacy for the mobile application <strong>Reflections Of Gurbani</strong> (package name: <code>com.leoford.reflections_of_gurbani</code>, also referred to as "Reflections of Sri Guru Granth Sahib").</p>
+
+        <p>We are dedicated to safeguarding your personal privacy. Our app is designed to provide spiritual reading, collections, translations, audio, and video resources without compromising or exploiting your personal data.</p>
 
         <h2>1. Information We Do Not Collect</h2>
-        <p>We do not collect personal identification information such as your name, phone number, location, or contacts. The app functions strictly locally on your device for reading Gurbani shabads offline.</p>
+        <p>We believe strongly in user data minimization. <strong>Reflections Of Gurbani</strong> does not collect, record, harvest, or transmit any personally identifiable information (PII). Specifically:</p>
+        <ul>
+            <li>We do <strong>not</strong> collect your real name, physical address, or phone number.</li>
+            <li>We do <strong>not</strong> access your contacts, SMS messages, phone logs, or calendar.</li>
+            <li>We do <strong>not</strong> track or log your precise or approximate physical GPS location.</li>
+            <li>We do <strong>not</strong> collect biometric identifiers, photos, audio microphone recordings, or camera feeds.</li>
+            <li>We do <strong>not</strong> require user registration, account creation, passwords, or social media logins to use the app.</li>
+        </ul>
 
-        <h2>2. Local Data Storage</h2>
-        <p>Bookmarks, user font settings, and offline cached collection files are stored entirely locally on your device using encrypted SharedPreferences. You can clear this data at any time through the app settings.</p>
+        <h2>2. Device Permissions and Usage</h2>
+        <p>The application requests only minimal, standard permissions necessary for its intended functionality:</p>
+        <ul>
+            <li><strong>INTERNET (android.permission.INTERNET):</strong> Used solely to fetch Gurbani texts, collection updates, and stream spiritual audio and video content from our secure content distribution servers.</li>
+            <li><strong>ACCESS_NETWORK_STATE (android.permission.ACCESS_NETWORK_STATE):</strong> Used to detect whether an active internet connection is available to determine whether to load remote media or serve cached offline content.</li>
+        </ul>
+        <p>No sensitive, dangerous, or runtime privacy-invading permissions (such as Location, Camera, Microphone, or Storage access) are requested or utilized.</p>
 
-        <h2>3. Third-Party Services</h2>
-        <p>The app does not contain third-party advertising SDKs, tracking pixels, or data analytics that sell or share your usage data with external third parties.</p>
+        <h2>3. Local Data Storage & Preferences</h2>
+        <p>The application stores certain user preferences locally on your physical device using Flutter's encrypted SharedPreferences mechanism:</p>
+        <ul>
+            <li><strong>Bookmarks & History:</strong> Saved bookmarks and reading history for your personal convenience.</li>
+            <li><strong>Display Settings:</strong> User preferences such as font size, theme mode, and reading layout.</li>
+            <li><strong>Offline Cache:</strong> Downloaded Gurbani collections, Shabads, and chapters for offline reading.</li>
+        </ul>
+        <p>All of this data remains strictly stored on your local device. It is never uploaded to external servers, sold, or shared with third parties.</p>
 
-        <h2>4. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us via the Contact Us section in the application.</p>
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Because we do not collect or maintain user accounts or personal profiles on remote servers, we do not store any personal data about you on our backend.</p>
+        <p>You have absolute control over your locally stored data at any time:</p>
+        <ul>
+            <li>You can clear all app preferences and cached data through the app settings or via your Android device's <strong>Settings &gt; Apps &gt; Reflections Of Gurbani &gt; Storage &gt; Clear Storage / Clear Cache</strong>.</li>
+            <li>Uninstalling the application will immediately remove all locally stored preferences, bookmarks, and cached files from your device.</li>
+        </ul>
+
+        <h2>5. Third-Party Services & Links</h2>
+        <p>The application does not include third-party ad networks (such as Google AdMob or Unity Ads), behavioural trackers, or commercial analytics SDKs that profile users.</p>
+        <p>The app may display references or links to external media content (such as hosted audio or video streams). When interacting with external content, please be aware that third-party streaming services have their own privacy policies governing data handling.</p>
+
+        <h2>6. Children’s Privacy (COPPA Compliance)</h2>
+        <p><strong>Reflections Of Gurbani</strong> is a general audience, family-friendly spiritual application suitable for users of all ages, including children. We do not knowingly collect, solicit, or maintain any personal information from children under the age of 13 (or the applicable age in your jurisdiction), in full compliance with the Children's Online Privacy Protection Act (COPPA) and the General Data Protection Regulation (GDPR).</p>
+
+        <h2>7. Security of Your Information</h2>
+        <p>We take appropriate technical and organizational measures to ensure any network communications (such as fetching content files over HTTPS) are encrypted and secure against unauthorized interception.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect updates to our application, Google Play policies, or legal requirements. Any modifications will be posted directly to this URL, and the "Last Updated" date at the top of this page will be revised accordingly. We encourage users to periodically review this page.</p>
+
+        <h2>9. Contact and Developer Information</h2>
+        <p>If you have any questions, feedback, or concerns regarding this Privacy Policy or the data practices of <strong>Reflections Of Gurbani</strong>, please contact us directly:</p>
+        
+        <div class="contact-box">
+            <div class="contact-item"><strong>Developer Name:</strong> Mehanga Singh</div>
+            <div class="contact-item"><strong>Legal Entity / Brand:</strong> LeoFord</div>
+            <div class="contact-item"><strong>Application:</strong> Reflections Of Gurbani (Reflections of Sri Guru Granth Sahib)</div>
+            <div class="contact-item"><strong>Package ID:</strong> com.leoford.reflections_of_gurbani</div>
+            <div class="contact-item"><strong>Email:</strong> <a href="mailto:support@gurbaniapp.com">support@gurbaniapp.com</a></div>
+            <div class="contact-item"><strong>Website:</strong> <a href="https://mehangasingh78-glitch.github.io/gurbani-app/" target="_blank" rel="noopener noreferrer">https://mehangasingh78-glitch.github.io/gurbani-app/</a></div>
+        </div>
     </div>
 </body>
 </html>
